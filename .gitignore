@@ -25,5 +25,7 @@ hs_err_pid*
 .idea/**
 .gradle/**
 build/**
+core/.gradle/**
+core/build/**
 
 **.iml
