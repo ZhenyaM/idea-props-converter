@@ -1,0 +1,25 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+plugins {
+    id "org.jetbrains.intellij" version "0.4.5"
+}
+
+intellij {
+    sandboxDirectory = "$project.buildDir/idea-props-converter-sandbox"
+    version 'IC-2016.3' //IntelliJ IDEA 2016.3 dependency; for a full list of IntelliJ IDEA releases please see https://www.jetbrains.com/intellij-repository/releases
+    plugins 'coverage' //Bundled plugin dependencies
+    pluginName 'plugin_name_goes_here'
+}
+
+apply plugin: 'org.jetbrains.intellij'
+
+repositories {
+    mavenCentral()
+}

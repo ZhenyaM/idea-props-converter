@@ -10,3 +10,4 @@
 rootProject.name = 'props-converter'
 //rootProject.groupId = ''
 include 'core'
+include 'idea-plugin'
